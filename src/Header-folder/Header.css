@@ -1,0 +1,53 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.container {
+  background-color: #212529;
+}
+
+.main-header {
+  max-width: 130rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.list-item {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1.2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon-container {
+  justify-self: left;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+.icon-container svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.contact {
+  background-color: #f76707;
+  padding: 1rem 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
