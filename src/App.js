@@ -12,7 +12,6 @@ function InfoPage(props) {
   );
 }
 
-const test = 0;
 
 function App() {
   const [data, setData] = useState("0");
