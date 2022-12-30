@@ -7,7 +7,7 @@ function MainContent(props) {
   console.log("dwad", props.items);
 
   const [data, setData] = useState("0");
-
+  let test = 0;
   useEffect(() => {
     fetch(
       `http://www.omdbapi.com/?i=tt3896198&apikey=13a29915&t=${props.items.Series_Title}
