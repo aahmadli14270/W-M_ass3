@@ -14,6 +14,7 @@ function MoviesList(props) {
       });
   }, []);
 
+  const test = 0;
   return (
     <div>
       <p>Movies LIST</p>
