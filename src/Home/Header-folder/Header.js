@@ -1,5 +1,6 @@
 import "./Header.css";
-import "../general.css";
+import "../../general.css";
+
 function Header() {
   return (
     <div className="container">
