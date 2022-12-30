@@ -1,43 +1,18 @@
 import { Link } from "react-router-dom";
+import MainContent from "./Main-content/MainContent";
+import { useLocation } from "react-router-dom";
 
 function InfoPage(props) {
+  const location = useLocation();
+  const propsData = location.state;
+  console.log(propsData);
+
   return (
     <div>
       <p>INFO PAGEE</p>
+      <MainContent items={propsData}></MainContent>
     </div>
   );
 }
 
 export default InfoPage;
-
-//   return (
-//     <Router>
-//       <div className="App">
-//         <Header></Header>
-
-//         <Link to="/InfoPage">
-//           <p>{data[0].Series_Title}</p>
-//         </Link>
-
-//         {/* <MainContent items={data[0]}></MainContent>
-//       <p>{data[0].ID}</p>
-//       <p>{data[0].Series_Title}</p> */}
-
-//         <Routes>
-//           <Route
-//             path="/InfoPage"
-//             element={<InfoPage sid={data[0]}></InfoPage>}
-//           ></Route>
-//         </Routes>
-//       </div>
-//     </Router>
-//   );
-// }
-
-// function InfoPage(props) {
-//   return (
-//     <div>
-//       <MainContent items={props.sid}></MainContent>
-//     </div>
-//   );
-// }

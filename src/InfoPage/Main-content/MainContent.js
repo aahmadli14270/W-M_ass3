@@ -1,5 +1,5 @@
 import "./MainContent.css";
-import "../general.css";
+import "../../general.css";
 import MainContentImage from "./MainContentImage/MainContentImage";
 import { useEffect, useState } from "react";
 
@@ -18,8 +18,6 @@ function MainContent(props) {
         setData(result);
         // console.log("changed data", data[0]);
       });
-    
-    
   }, [props.items.Series_Title, props.items.Released_Year]);
   console.log(data);
 

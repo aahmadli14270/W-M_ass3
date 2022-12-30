@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "./Header-folder/Header";
-function Home() {
+function Home(props) {
   return (
     <div>
       <Header></Header>

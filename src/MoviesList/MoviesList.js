@@ -14,12 +14,11 @@ function MoviesList(props) {
       });
   }, []);
 
-  const test = 0;
   return (
     <div>
       <p>Movies LIST</p>
-      <Link to="/InfoPage">
-        <p> Press on this text for iNFO pAGE</p>
+      <Link to="/InfoPage" state={data[0]}>
+        <p> {data[0].Series_Title}</p>
       </Link>
     </div>
   );
