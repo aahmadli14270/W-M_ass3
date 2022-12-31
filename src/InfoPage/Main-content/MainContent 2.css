@@ -1,0 +1,22 @@
+.main-container {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  background-color: #212529;
+  border-radius: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.poster-img {
+  height: 64%;
+  width: 36%;
+}
+
+.info-container {
+  color: #fff;
+  font-size: 1.6rem;
+}

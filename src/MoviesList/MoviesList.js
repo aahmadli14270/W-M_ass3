@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function MoviesList(props) {
-  const [data, setData] = useState("0");
+  const [data, setData] = useState([]);
 
   // let data = 0;
   useEffect(() => {
@@ -17,9 +17,14 @@ function MoviesList(props) {
   return (
     <div>
       <p>Movies LIST</p>
-      <Link to="/InfoPage" state={data[0]}>
+      {data.map((element) => (
+        <Link to="/InfoPage" state={element}>
+          <p> {element.Series_Title}</p>
+        </Link>
+      ))}
+      {/* <Link to="/InfoPage" state={data[0]}>
         <p> {data[0].Series_Title}</p>
-      </Link>
+      </Link> */}
     </div>
   );
 }
