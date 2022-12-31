@@ -1,0 +1,20 @@
+.icon-container-for-info-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 10%;
+  margin-left: 7rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon-container-for-info-page svg {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.icon-container-for-info-page h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  letter-spacing: 1.2px;
+}

@@ -31,7 +31,10 @@ function MainContent(props) {
               <span>({props.items.Released_Year})</span>
             </h1>
             <div className="imdb-rating">
-              <p>{props.items.IMDB_Rating}</p>
+              <p>
+                <span className="imdb-text">IMDb: </span>{" "}
+                {props.items.IMDB_Rating}
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#f59f00"
@@ -48,9 +51,18 @@ function MainContent(props) {
               </svg>
             </div>
           </div>
-          <p class="director"> Directed by {props.items.Director}</p>
+          <p class="director">
+            {" "}
+            Directed by{" "}
+            <span className="Director-name">{props.items.Director}</span>
+          </p>
           <div class="image-and-data">
-            {data && <MainContentImage posterinfo={data}></MainContentImage>}
+            {data && (
+              <MainContentImage
+                posterinfo={data.Response == "False" ? props.items : data}
+                secondposter={props.items}
+              ></MainContentImage>
+            )}
             <div class="data">
               <p className="overview">
                 <span className="overview-title">Overview</span> <br />
