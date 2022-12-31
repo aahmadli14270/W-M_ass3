@@ -33,38 +33,43 @@ function MainContent(props) {
             </h1>
             <p class="imdb-rating">{props.items.IMDB_Rating}</p>
           </div>
-          <p class="director"> Directed by {data && data.Director}</p>
+          <p class="director"> Directed by {props.items.Director}</p>
           <div class="image-and-data">
             {data && <MainContentImage posterinfo={data}></MainContentImage>}
             <div class="data">
               <p className="overview">
-                <span>Overview</span> <br />
+                <span className="overview-title">Overview</span> <br />
                 {props.items.Overview}
               </p>
               <p className="genre">
-                <span>Genre</span> <br />
+                <span className="genre-title">Genre</span> <br />
                 {props.items.Genre}
               </p>
               <div className="additional-information-in-table">
                 <p>
-                  Country <br />
-                  {data && data.Country.split(",")[1]}
+                  <span className="add-in-title">Country</span> <br />
+                  <span className="add-in-data">
+                    {data ? data.Country : "---"}
+                  </span>
                 </p>
                 <p>
-                  Time <br />
-                  {props.items.Meta_score}
+                  <span className="add-in-title">Time </span>
+                  <br />
+                  <span className="add-in-data">{props.items.Runtime}</span>
                 </p>
                 <p>
-                  Metascore <br />
-                  {props.items.Meta_score}
+                  <span className="add-in-title">Metascore</span> <br />
+                  <span className="add-in-data">
+                    {props.items.Meta_score} point
+                  </span>
                 </p>
                 <p>
-                  Box Office <br />
-                  {props.items.Meta_score}
+                  <span className="add-in-title">Gross</span> <br />
+                  <span className="add-in-data">{props.items.Gross}$</span>
                 </p>
                 <p>
-                  IMDb Votes <br />
-                  {props.items.Meta_score}
+                  <span className="add-in-title">IMDb Votes</span> <br />
+                  <span className="add-in-data">{props.items.No_of_Votes}</span>
                 </p>
               </div>
             </div>

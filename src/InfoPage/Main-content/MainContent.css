@@ -4,6 +4,7 @@
 
   background-color: #212529;
   border-radius: 2rem;
+  margin-top: 3rem;
 }
 
 .grid-container {
@@ -54,17 +55,20 @@
   padding-right: 5rem;
   padding-left: 3rem;
 }
-.data span {
-  font-weight: 800;
-  color: #fff;
-}
-.overview {
-  margin-bottom: 2rem;
+
+.overview,
+.genre {
+  margin-bottom: 2.5rem;
 }
 
-.genre {
-  margin-bottom: 2rem;
+.overview-title,
+.genre-title {
+  display: inline-block;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
 }
+
 .poster-img {
   height: 35rem;
   width: 35rem;
@@ -77,4 +81,11 @@
 .additional-information-in-table p {
   border: 1px rgb(144, 146, 159) solid;
   padding: 2rem;
+}
+.add-in-title {
+  padding-bottom: 0.8rem;
+  display: inline-block;
+}
+.add-in-data {
+  color: #fff;
 }

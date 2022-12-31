@@ -9,7 +9,6 @@ function InfoPage(props) {
 
   return (
     <div>
-      <p>INFO PAGEE</p>
       <MainContent items={propsData}></MainContent>
     </div>
   );

@@ -7,7 +7,13 @@ function MainContentImage(props) {
 
   return (
     <div className="poster">
-      {<img className="poster-img" src={link} alt="wdad" />}
+      {
+        <img
+          className="poster-img"
+          src={link}
+          alt="If the picture is not here, it is because of the external poster API, some movies are not available in API"
+        />
+      }
     </div>
   );
 }
