@@ -18,7 +18,7 @@ function MoviesList(props) {
     <div>
       <p>Movies LIST</p>
       {data.map((element) => (
-        <Link to="/InfoPage" state={element}>
+        <Link key={element.ID} to="/InfoPage" state={element}>
           <p> {element.Series_Title}</p>
         </Link>
       ))}
