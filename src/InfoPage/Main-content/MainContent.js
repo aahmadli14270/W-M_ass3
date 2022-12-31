@@ -6,20 +6,20 @@ import { useEffect, useState } from "react";
 function MainContent(props) {
   console.log("dwad", props.items);
 
-  const [data, setData] = useState("0");
+  let movie_name = props.items.Series_Title.replaceAll(" ", "+");
+
+  const [data, setData] = useState(null);
   let test = 0;
   useEffect(() => {
     fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=13a29915&t=${props.items.Series_Title}
+      `http://www.omdbapi.com/?i=tt3896198&apikey=13a29915&t=${movie_name}
       &y=${props.items.Released_Year}`
     )
       .then((res) => res.json())
       .then((result) => {
         setData(result);
-        // console.log("changed data", data[0]);
       });
   }, [props.items.Series_Title, props.items.Released_Year]);
-  console.log(data);
 
   return (
     <section className="main-container">
