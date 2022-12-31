@@ -25,12 +25,18 @@
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
+.title span {
+  color: #f76707;
+}
+
 .imdb-rating {
   font-size: 2rem;
   justify-self: center;
+  color: #f76707;
 }
 .director {
   margin-bottom: 3rem;
+  color: #f76707;
 }
 .fake-nav {
   width: 30%;
@@ -55,7 +61,20 @@
 .overview {
   margin-bottom: 2rem;
 }
+
+.genre {
+  margin-bottom: 2rem;
+}
 .poster-img {
   height: 35rem;
   width: 35rem;
+}
+.additional-information-in-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.additional-information-in-table p {
+  border: 1px rgb(144, 146, 159) solid;
+  padding: 2rem;
 }

@@ -28,16 +28,12 @@ function MainContent(props) {
         <div className="info-container">
           <div class="title-rating">
             <h1 class="title">
-              {props.items.Series_Title} ({props.items.Released_Year})
+              {props.items.Series_Title}{" "}
+              <span>({props.items.Released_Year})</span>
             </h1>
             <p class="imdb-rating">{props.items.IMDB_Rating}</p>
           </div>
           <p class="director"> Directed by {data && data.Director}</p>
-          {/* <div class="fake-nav">
-            <p>OVERVIEW</p>
-            <p>DISCUSSION</p>
-            <p>SHARE</p>
-          </div> */}
           <div class="image-and-data">
             {data && <MainContentImage posterinfo={data}></MainContentImage>}
             <div class="data">
@@ -49,7 +45,28 @@ function MainContent(props) {
                 <span>Genre</span> <br />
                 {props.items.Genre}
               </p>
-              <p>{props.items.Meta_score}</p>
+              <div className="additional-information-in-table">
+                <p>
+                  Country <br />
+                  {data && data.Country.split(",")[1]}
+                </p>
+                <p>
+                  Time <br />
+                  {props.items.Meta_score}
+                </p>
+                <p>
+                  Metascore <br />
+                  {props.items.Meta_score}
+                </p>
+                <p>
+                  Box Office <br />
+                  {props.items.Meta_score}
+                </p>
+                <p>
+                  IMDb Votes <br />
+                  {props.items.Meta_score}
+                </p>
+              </div>
             </div>
           </div>
         </div>
