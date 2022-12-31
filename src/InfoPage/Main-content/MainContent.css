@@ -31,10 +31,26 @@
 }
 
 .imdb-rating {
-  font-size: 2rem;
+  font-size: 2.5rem;
   justify-self: center;
   color: #f76707;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 0.8rem;
 }
+
+.imdb-rating-svg {
+  margin-top: -0.5rem;
+}
+
+.imdb-rating-svg:hover {
+  stroke: #ffd43b;
+  fill: #ffd43b;
+  transition: ease all 0.3s;
+}
+
 .director {
   margin-bottom: 3rem;
   color: #f76707;
@@ -81,11 +97,49 @@
 .additional-information-in-table p {
   border: 1px rgb(144, 146, 159) solid;
   padding: 2rem;
+  margin-bottom: 5rem;
 }
 .add-in-title {
   padding-bottom: 0.8rem;
   display: inline-block;
 }
 .add-in-data {
+  color: #fff;
+  font-weight: 400;
+}
+
+.stars-title {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+.stars-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: -5rem;
+}
+.stars {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.star-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #343a40;
+  margin-bottom: 2rem;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.star-img svg {
+  width: 6rem;
+  height: 6rem;
+}
+
+.stars-name {
   color: #fff;
 }
