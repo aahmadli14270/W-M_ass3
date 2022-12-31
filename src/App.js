@@ -23,7 +23,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Movies" element={<MoviesList />} />
           <Route
-            path="/InfoPage"
+            path="/InfoPage/:movieTitle"
             element={<InfoPage item={window.location.state} />}
           />
         </Routes>

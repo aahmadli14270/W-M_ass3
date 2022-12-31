@@ -10,7 +10,6 @@ function MoviesList(props) {
       .then((res) => res.json())
       .then((result) => {
         setData(result);
-        // console.log("DATA IS:", data);
       });
   }, []);
 
@@ -18,13 +17,14 @@ function MoviesList(props) {
     <div>
       <p>Movies LIST</p>
       {data.map((element) => (
-        <Link key={element.ID} to="/InfoPage" state={element}>
+        <Link
+          key={element.ID}
+          to={"/InfoPage/" + element.Series_Title}
+          state={element}
+        >
           <p> {element.Series_Title}</p>
         </Link>
       ))}
-      {/* <Link to="/InfoPage" state={data[0]}>
-        <p> {data[0].Series_Title}</p>
-      </Link> */}
     </div>
   );
 }

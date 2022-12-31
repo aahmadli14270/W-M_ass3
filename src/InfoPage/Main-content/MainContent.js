@@ -9,7 +9,7 @@ function MainContent(props) {
   let movie_name = props.items.Series_Title.replaceAll(" ", "+");
 
   const [data, setData] = useState(null);
-  let test = 0;
+
   useEffect(() => {
     fetch(
       `http://www.omdbapi.com/?i=tt3896198&apikey=13a29915&t=${movie_name}
