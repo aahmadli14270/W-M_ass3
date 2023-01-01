@@ -10,13 +10,7 @@ function MainContentImage(props) {
 
   return (
     <div className="poster">
-      {link && (
-        <img
-          className="poster-img"
-          src={link}
-          alt="If the picture is not here, it is because of the external poster API, some movies are not available in API"
-        />
-      )}
+      {link && <img className="poster-img" src={link} alt="film poster" />}
     </div>
   );
 }

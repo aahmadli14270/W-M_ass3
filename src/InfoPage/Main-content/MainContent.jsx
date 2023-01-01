@@ -25,8 +25,8 @@ function MainContent(props) {
     <section className="main-container">
       <div className="grid-container">
         <div className="info-container">
-          <div class="title-rating">
-            <h1 class="title">
+          <div className="title-rating">
+            <h1 className="title">
               {props.items.Series_Title}{" "}
               <span>({props.items.Released_Year})</span>
             </h1>
@@ -51,19 +51,19 @@ function MainContent(props) {
               </svg>
             </div>
           </div>
-          <p class="director">
+          <p className="director">
             {" "}
             Directed by{" "}
             <span className="Director-name">{props.items.Director}</span>
           </p>
-          <div class="image-and-data">
+          <div className="image-and-data">
             {data && (
               <MainContentImage
                 posterinfo={data.Response == "False" ? props.items : data}
                 secondposter={props.items}
               ></MainContentImage>
             )}
-            <div class="data">
+            <div className="data">
               <p className="overview">
                 <span className="overview-title">Overview</span> <br />
                 {props.items.Overview}
