@@ -8,6 +8,7 @@ function MoviesList(props) {
 
   const [pageCount, setpageCount] = useState(0);
 
+  const test = 0;
   let limit = 20;
 
   useEffect(() => {
