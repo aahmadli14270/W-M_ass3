@@ -31,3 +31,43 @@
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
+
+.icon-container-for-movies-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 10%;
+  margin-left: 7rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon-container-for-movies-page svg {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.icon-container-for-movies-page h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  letter-spacing: 1.2px;
+}
+.page-item {
+  font-size: 1.6rem;
+}
+.pagination {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.page-link {
+  background-color: #212529;
+  color: #fff;
+  border: #343a40;
+  padding: 1rem;
+}
+
+.page-item.active .page-link {
+  background-color: #f76707;
+  border: #f76707;
+}

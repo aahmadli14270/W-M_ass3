@@ -5,13 +5,27 @@ a {
   text-decoration: none;
   color: #fff;
 }
+.container {
+  background-color: #212529;
+  max-width: 150rem;
+}
 
-nav {
+.Moviefy {
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+
+a:hover {
+  color: #f76707;
+  transition: 0.15s all;
+}
+
+.nav-bar-home {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.container {
-  background-color: #212529;
+.nav-list {
+  margin: 0;
 }
 
 .main-header {
@@ -25,7 +39,7 @@ nav {
 .list-item {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1.2fr;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1.2fr 1.2fr;
   justify-items: center;
   align-items: center;
 }
