@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "./Header-folder/Header";
+import './Home.css';
 function Home(props) {
   return (
     <div>
