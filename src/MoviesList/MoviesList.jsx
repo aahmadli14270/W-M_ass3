@@ -13,7 +13,7 @@ function MoviesList(props) {
   useEffect(() => {
     const getItems = async () => {
       const res = await fetch(
-        `http://localhost:3000/items?_page=1&_limit=${limit}`
+        `http://localhost:3000/movies?_page=1&_limit=${limit}`
       );
       const data = await res.json();
       const total = res.headers.get("x-total-count");
@@ -25,7 +25,7 @@ function MoviesList(props) {
 
   const fetchComments = async (currentPage) => {
     const res = await fetch(
-      `http://localhost:3000/items?_page=${currentPage}&_limit=${limit}`
+      `http://localhost:3000/movies?_page=${currentPage}&_limit=${limit}`
     );
     const data = await res.json();
     return data;
