@@ -1,5 +1,6 @@
 import "./Header.css";
 import "../../general.css";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="container">
@@ -37,9 +38,9 @@ function Header() {
                 <a className="link" href="#">
                   Project Link in Git
                 </a>
-                <a className="link contact" href="#">
+                <Link className="link contact" to="/Contact">
                   CONTACT US!
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
