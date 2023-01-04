@@ -59,7 +59,7 @@ function MainContent(props) {
           <div className="image-and-data">
             {data && (
               <MainContentImage
-                posterinfo={data.Response == "False" ? props.items : data}
+                posterinfo={data.Response === "False" ? props.items : data}
                 secondposter={props.items}
               ></MainContentImage>
             )}

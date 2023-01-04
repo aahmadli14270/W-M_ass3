@@ -41,7 +41,6 @@ const Contact = () => {
         ></img>
       </div>
       <div id="box2">
-        {/* <br/> <br/> <br/> <br/>  */}
         <p className="contactus-contact">Contact Us!</p>
         <form ref={form} onSubmit={sendEmail}>
           <label></label>
