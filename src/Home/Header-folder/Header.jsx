@@ -26,9 +26,7 @@ function Header() {
                   </svg>
                   <h1 className="Moviefy">Moviefy</h1>
                 </div>
-                <a className="link" href="#">
-                  Github
-                </a>
+                <Link to="/Movies">Top 1000 Movies</Link>
                 <a className="link" href="#">
                   Facebook
                 </a>
