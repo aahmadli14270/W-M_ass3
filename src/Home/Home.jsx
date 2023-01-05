@@ -16,7 +16,7 @@ function Home() {
               significant contribution to the project. In the below, each team
               member, his works is mentioned. <br /> <br />
               <h5 className="us-h5">Ali Ahmadli</h5>
-              <h5 className="us-h5">Manaf aghazada</h5>
+              <h5 className="us-h5">Manaf Aghazada</h5>
               <h5 className="us-h5">Zaid Rustamov</h5>
             </div>
           </div>
