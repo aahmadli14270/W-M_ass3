@@ -1,4 +1,18 @@
 {
+  "emails": [
+    {
+      "new-name": "Zaid Rustamov",
+      "new-email": "rustamov.zaid@gmail.com",
+      "message-context": "testing",
+      "id": 1
+    },
+    {
+      "new-name": "Lionel Messi",
+      "new-email": "leo_messi@gmail.com",
+      "message-context": "Salam, Zaid",
+      "id": 2
+    }
+  ],
   "movies": [
     {
       "ID": 1,
