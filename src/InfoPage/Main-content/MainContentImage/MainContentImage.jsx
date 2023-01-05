@@ -1,5 +1,4 @@
 import "../../../general.css";
-import { useEffect, useState } from "react";
 import "../../image/cssimg.jpg";
 
 function MainContentImage(props) {
