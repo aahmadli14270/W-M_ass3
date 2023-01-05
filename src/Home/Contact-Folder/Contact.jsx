@@ -1,6 +1,4 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
 import "../../general.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,25 +11,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_vp7o0pb",
-        "template_c3ef8vr",
-        form.current,
-        "4l93Ik3opPXKcqc0T"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div id="container">
       <div id="box1">
@@ -42,21 +21,26 @@ const Contact = () => {
       </div>
       <div id="box2">
         <p className="contactus-contact">Contact Us!</p>
-        <form ref={form} onSubmit={sendEmail}>
+        <form action="http://localhost:3000/emails" method="post">
           <label></label>
           <input
             type="text"
-            name="user_name"
+            name="new-name"
+            id="new-name"
             placeholder="Enter your full name"
           />
           <label></label>
           <input
             type="email"
-            name="user_email"
+            name="new-email"
+            id="new-email"
             placeholder="Enter your email"
           />
           <label></label>
-          <textarea name="message" placeholder="Message" />
+          <textarea 
+            name="message-context" 
+            id="message-context"
+            placeholder="Message" />
           <input type="submit" value="Send" id="submit" />
         </form>
         <span className="social-media-icons-white">
