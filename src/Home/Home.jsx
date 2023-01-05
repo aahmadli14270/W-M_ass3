@@ -58,15 +58,15 @@ function Home() {
           <div className="youtube-link">
             <strong>Project Presentation</strong>
             <br /> <br />
-            <iframe
-              width="500"
-              height="250"
-              src="https://www.youtube.com/embed/7okHiY4oErk"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+            <iframe 
+              width="500" 
+              height="250" 
+              src="https://www.youtube.com/embed/izXz-WCg67c" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
             <br /> <br />
             <a href="">
               <strong>Github Link</strong>
