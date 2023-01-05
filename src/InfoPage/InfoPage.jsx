@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import MainContent from "./Main-content/MainContent";
 import { useLocation } from "react-router-dom";
 import "./InfoPage.css";
