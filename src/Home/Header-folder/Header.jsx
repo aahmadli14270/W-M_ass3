@@ -33,7 +33,10 @@ function Header() {
                 <a className="link" href="#">
                   LinkedIn
                 </a>
-                <a className="link" href="#">
+                <a
+                  className="link"
+                  href="https://github.com/aahmadli14270/W-M_ass3"
+                >
                   Project Link in Git
                 </a>
                 <Link className="link contact" to="/Contact">

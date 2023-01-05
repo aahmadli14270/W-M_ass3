@@ -65,6 +65,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 .contact:hover {
-  color: #fff;
+  background-color: #fff;
 }
