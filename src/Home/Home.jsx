@@ -113,14 +113,11 @@ function Home() {
                 <div className="member-container right-grid">
                   <p className="info-us-p right-border">
                     <h1 className="member-name-h1">Zaid Rustemov</h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos ullam saepe totam molestias ratione aspernatur natus
-                    animi itaque pariatur, assumenda esse sed deserunt neque
-                    eius, incidunt officia est exercitationem! Ipsa.Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Eligendi
-                    similique, delectus modi molestias officia doloribus
-                    asperiores suscipit, a aspernatur cupiditate error iusto,
-                    deserunt velit assumenda eius repudiandae fugiat libero ea?
+                    Zaid is a 3<sup>rd</sup> bachelor year of Computer Science Student at ADA University. Even though he takes Web and Mobile l course
+                    as Free Elective, he is curious about web programming. In the previous assignments, he has cretaed many well-designed, fancy
+                    projects through semester. He has mainly used HTML for overall scheleton, CSS for designing, JS for add animations, functions
+                    to both HTML and CSS elements. In the last assignment, he has extended his knowledge by studying and applying ReactJS thanks to
+                    the professor and teammates.
                   </p>
                   <div className="img-svg">
                     <svg
@@ -160,14 +157,11 @@ function Home() {
                   </div>
                   <p className="info-us-p">
                     <h1 className="member-name-h1">Ali Ahmadli</h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos ullam saepe totam molestias ratione aspernatur natus
-                    animi itaque pariatur, assumenda esse sed deserunt neque
-                    eius, incidunt officia est exercitationem! Ipsa. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Eligendi
-                    similique, delectus modi molestias officia doloribus
-                    asperiores suscipit, a aspernatur cupiditate error iusto,
-                    deserunt velit assumenda eius repudiandae fugiat libero ea?
+                    Ali is a 3<sup>rd</sup> year İT student at ADA university. Since Web and mobile is essential in his profession, 
+                    he has experience about design and back-end development. This assignment is his first project experience 
+                    with react, so it was a very different experience for him, but in fact, he did well on assignment. 
+                    Additionally, he also weatify project which shows up weather for 3 days for the given coordinates, name, or 
+                    location. He also had static webpage project which was a personal webpage.
                   </p>
                 </div>
               </div>
@@ -178,21 +172,17 @@ function Home() {
         <div className="about-all-projects">
           <div className="all-projects-container">
             <h1 className="all-projects-h1">
-              All projects we have done so far.
+              Development Process of the Moviefy.
             </h1>
             <p className="all-projects-p">
-              wadawdaw dwd adwd adwd awdw Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Incidunt similique suscipit aliquid
-              at praesentium sapiente deserunt beatae. Sint laudantium qui
-              temporibus quia, officiis saepe voluptatem atque consequatur harum
-              perspiciatis ipsa!Loremlore Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Atque ducimus repellendus delectus voluptates
-              facere placeat provident eveniet assumenda quaerat nobis minima,
-              alias, excepturi perspiciatis. Animi veniam quibusdam tempore!
-              Alias, illum. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Incidunt nihil laudantium enim soluta reprehenderit, dicta,
-              quia voluptates aliquam vero magni quod maiores corporis. Officia
-              amet velit similique voluptate sunt maxime?
+              In the steps component, we mentioned that we developed our web based software by following the steps of Extreme Programming, (XP).
+              The reason to choose the process model is the development of the software depened on our effective communication, planning the work,
+              designing stage which is mainly about coding and its testing. Firstly in communication stage, we organized meetings at the university,
+              in online platforms, via social media. In planning phase, we decided that to release it in the dedicated time, each of us should work
+              when he had free time. Moreover, we decomposed works like the following. Manaf was required to convert excel file to json file, Main page
+              components, its design, and overall contribution to Movie pages. Zaid was required to create json-server, Contact page, its desgin, and
+              help Ali in Movie section. Ali was required to test each json-server, Home page, Contact page, its design, and work on Movie page. Fortunately,
+              we finished our work on time and test it in terms of verification and validation techniques. 
             </p>
           </div>
         </div>
