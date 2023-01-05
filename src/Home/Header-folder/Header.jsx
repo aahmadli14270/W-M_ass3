@@ -27,10 +27,10 @@ function Header() {
                   <h1 className="Moviefy">Moviefy</h1>
                 </div>
                 <Link to="/Movies">Top 1000 Movies</Link>
-                <a className="link" href="#">
+                <a className="link" href="https://www.facebook.com/">
                   Facebook
                 </a>
-                <a className="link" href="#">
+                <a className="link" href="https://www.linkedin.com/">
                   LinkedIn
                 </a>
                 <a
